@@ -1,3 +1,5 @@
+import * as React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
 import "./App.css";
 import EnrollmentForm from "./components/EnrollmentForm";
 // import FormikContainer from "./components/FormikContainer";
@@ -6,12 +8,14 @@ import EnrollmentForm from "./components/EnrollmentForm";
 
 function App() {
   return (
-    <div className="App">
-      {/* <FormikContainer /> */}
-      {/* <LoginForm /> */}
-      {/* <RegistrationForm /> */}
-      <EnrollmentForm />
-    </div>
+    <ChakraProvider>
+      <div className="App">
+        {/* <FormikContainer /> */}
+        {/* <LoginForm /> */}
+        {/* <RegistrationForm /> */}
+        <EnrollmentForm />
+      </div>
+    </ChakraProvider>
   );
 }
 
