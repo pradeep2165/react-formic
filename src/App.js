@@ -1,9 +1,11 @@
 import * as React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import "./App.css";
-import EnrollmentForm from "./components/EnrollmentForm";
+// import ChakraInput from "./components/ChakraInput";
+
+// import EnrollmentForm from "./components/EnrollmentForm";
 // import FormikContainer from "./components/FormikContainer";
-// import LoginForm from "./components/LoginForm";
+import LoginForm from "./components/LoginForm";
 // import RegistrationForm from "./components/RegistrationForm";
 
 function App() {
@@ -11,9 +13,10 @@ function App() {
     <ChakraProvider>
       <div className="App">
         {/* <FormikContainer /> */}
-        {/* <LoginForm /> */}
+        <LoginForm />
         {/* <RegistrationForm /> */}
-        <EnrollmentForm />
+        {/* <EnrollmentForm /> */}
+        {/* <ChakraInput /> */}
       </div>
     </ChakraProvider>
   );

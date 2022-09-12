@@ -19,9 +19,9 @@ function LoginForm() {
     <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
       {(formik) => {
         return (
-          <Form>
-            <FormikControl control="input" type="email" label="Email" name="email" />
-            <FormikControl control="input" type="password" label="Password" name="password" />
+          <Form className="form-control">
+            <FormikControl control="chakrainput" type="email" label="Email" name="email" />
+            <FormikControl control="chakrainput" type="password" label="Password" name="password" />
             <button type="submit" disabled={!formik.isValid}>
               Submit
             </button>
